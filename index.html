@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>projeto</title>
+</head>
+
+<body>
+
+    <div class="main"> 
+
+        <div class="perfil">
+            <div class="containerprof">
+                <div class="icon">
+                    <img src="" class="imgicon">
+                </div>
+                <a class="name">USERNAME</a>
+                <div class="descdiv">
+                    <a class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus 
+                        iaculis. Convallis aenean et tortor at risus. Convallis tellus id interdum velit 
+                        laoreet id donec ultrices. Duis ultricies lacus sed turpis tincidunt id. Quis enim 
+                        lobortis scelerisque fermentum dui faucibus in. Enim lobortis scelerisque fermentum
+                        dui faucibus in. Dui nunc mattis enim ut. Non nisi est sit amet facilisis magna 
+                        etiam tempor. Sagittis aliquam malesuada bibendum arcu vitae. Molestie a iaculis 
+                        at erat pellentesque. Eleifend quam adipiscing vitae proin. Luctus venenatis lectus 
+                        magna fringilla urna porttitor rhoncus dolor purus. At consectetur lorem donec massa 
+                        sapien faucibus. At tempor commodo ullamcorper a lacus vestibulum.
+                    </a>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li><img src="img/twitter.png" class="img"><a class="links" href=”#”>twitter.com</a></li>
+                        <li><img src="img/instagram.png" class="img"><a class="links" href=”#”>instagram.com</a></li>
+                        <li><img src="img/linkedin.png" class="img"><a class="links" href=”#”>linkedin.com</a></li>
+                        <li><img src="img/tumblr.png" class="img"><a class="links" href=”#”>tumblr.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tarefa">
+            <div class="containertar">
+                <div class="tartop">
+                    
+                    <a class="title">
+                        LISTA DE TAREFAS
+                    </a>
+
+                    <div>
+                        <button class="button" id="openPopup">ADICIONAR</button>
+                        <button class="button">REMOVER</button>   
+
+                    </div>
+                </div>
+
+                <div class="tarbottom">
+
+                    <div class="divl">
+                        <a class="divtitle">DIA</a>
+                        <div class="tarefasDia">
+                            <div class="objListaD"></div>
+                        </div>
+                    </div>
+                    <div class="divr">
+                        <a class="divtitle">NOITE</a>
+                        <div class="tarefasNoite">
+                            <div class="objListaN"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="mainpop">
+            <div class="popup-container">
+                <span id="closePopup" class="close material-symbols-outlined">
+                    cancel
+                </span>
+                <form id="addForm" class="popup-content sumiu">
+                    
+                    <label for="tarefas" class="popup-title">Tarefa</label>
+                    <input type="text" id="tarefas" required>
+                    
+                    <label class="popup-title">Período</label>
+                    <div>
+                        <input type="radio" id="dia" name="periodo" value="dia">
+                        <label for="dia" class="popup-text">Dia</label>
+        
+                        <input type="radio" id="noite" name="periodo" value="noite">
+                        <label for="noite" class="popup-text">Noite</label>
+                    </div>
+
+                    <button type="submit" class="popup-button">ENVIAR</button>
+                </form>
+                <div id="removeForm" class="popup-content sumiu">
+                    <label class="popup-title2">Tarefa (dia):</label>
+                    <select id="tarefasDropdownDia" name="tarefasDropdownDia"></select>
+                    <button onclick="removerTarefaDia()" class="popup-button2">Remover</button>
+
+                    <label class="popup-title2">Tarefa (noite):</label>
+                    <select id="tarefasDropdownNoite" name="tarefasDropdownNoite"></select>
+                    <button onclick="removerTarefaNoite()" class="popup-button2">Remover</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>

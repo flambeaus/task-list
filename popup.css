@@ -1,0 +1,112 @@
+.popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-image: url(img/bg.png);
+    padding: 10px;
+    height: 230px;
+    width: 280px;
+    border-radius: 18px;
+}
+
+.mainpop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.popup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+    height: 98%;
+    background-color: white;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.popup-content{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.popup-title{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 500;
+    margin-bottom: -16px;
+    color: #FF4444;
+}
+
+.popup-title2{
+    margin-top: -4px;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 500;
+    margin-bottom: -16px;
+    color: #FF4444;
+}
+
+.popup-text{
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    color: black;
+}
+
+.popup-button{
+    margin-top: -8px;
+    border: none;
+    height: 24px;
+    width: 216px;
+    background-color: #FF6464;
+    border-radius: 20px;
+    align-self: center;
+    font-weight: 200;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    color: white;
+}
+
+.popup-button:hover{background-color: #FF4444}
+
+.popup-button:active{background-color: #FF4444}
+
+.popup-button2{
+    margin-top: -12px;
+    border: none;
+    height: 24px;
+    width: 216px;
+    background-color: #FF6464;
+    border-radius: 20px;
+    align-self: center;
+    font-weight: 200;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    color: white;
+}
+
+.popup-button2:hover{background-color: #FF4444}
+
+.popup-button2:active{background-color: #FF4444}
+
+.close{
+    font-size: 25px !important;
+    color: #FF4444 !important;
+    cursor: pointer;
+    padding-top: 2%;
+    padding-right: 15px;
+    width: 100%;
+    text-align: right;
+}
+
+.sumiu {
+    display: none;
+}
